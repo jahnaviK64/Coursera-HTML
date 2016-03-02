@@ -1,0 +1,137 @@
+*{
+	box-sizing: border-box;
+	/*margin:0; 
+	padding:0; */
+}
+h1{
+	text-align: center;
+}
+body{
+	background-color: #E3BAB0;
+	font-weight: bold;
+	font-family: helvetica;
+	/*font-size:75%;*/
+	/*clear:both;*/
+}
+div{
+	/*width:33.33%;*/
+	/*margin:20px;*/
+	/*position:absolute;
+	top:;*/
+}
+section{
+	clear:both;
+}
+p{
+	padding-bottom:10px;
+	/*clear:both;*/
+	width:200px;
+	height:200px;
+	/*margin:5px;*/
+	border:1px solid black;
+	float: left;
+	bottom:10px;
+	position:relative;
+	text-align:justify;
+	overflow: auto;
+	font-size: 1em;
+	/*display:block;*/
+}
+#inside1, #inside2, #inside3
+{
+position:relative;
+}
+span
+{
+	background-color:#FFF5CC;
+	border-left:1px solid black;
+	border-bottom: 1px solid black;
+	padding:2px;
+	float: right;
+	/*top:80px;
+	/*padding-top: 0px;
+	padding-right: 0px;*/
+	/*clear:both;*/
+	/*width: 33.33%;*/
+}
+#st1{
+	position: relative; /**balancing**/
+	left:10px;
+}
+
+#st2{
+position: relative; /**balancing**/
+	left:10px;
+}
+
+#st3{
+position: relative; /**balancing**/
+	left:10px;
+}
+#section1{
+background-color: #A6EDDE;
+width:33.33%;
+padding-left: 10px; /**balancing**/
+padding-right: 10px;
+}
+#section2{
+background-color: #FF9196;
+float:left;
+width:33.33%;
+padding-left: 10px; /**balancing**/
+padding-right: 10px;
+}
+#section3{
+background-color: #FFB566;
+float:right;
+width:33.33%;
+padding-left: 10px; /**balancing**/
+padding-right: 10px;
+/*clear:both;*/
+}
+
+/*comment
+#container
+{
+display:flex;
+justify-content: space-between;
+	clear:left;
+} 
+#total{
+	background-color: purple;
+	
+	padding:20px;
+} after commenting them media queries started worknig.Why?
+*/
+/**********MEDIA QUERIES**********/
+/******desktop******/
+@media(min-width:992px) and (max-width:1200px)
+{
+#container
+{
+	width:100%;
+}
+}
+/******tablet******/
+@media(min-width:768px) and (max-width:991px)
+{
+#section1, #section2
+{
+	width:50%;
+}
+#section2{
+	float: right;
+}
+#section3
+{
+	width:100%;	
+	}
+}
+/******mobile******/
+@media(max-width:767px)
+{
+#section1, #section2, #section3
+{
+	width:100%;
+}
+}
